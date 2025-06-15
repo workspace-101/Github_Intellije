@@ -17,12 +17,15 @@ public class App02 {
                 cnt++;
             }
         }
-        for(int i=0;i<cnt;i++){
-            arr[i]=0;
+        for(int i=0;i<len;i++){
+           if(i<cnt){
+                arr[i]=0;
+           }
+           else{
+               arr[i]=1;
+           }
         }
-        for(int i=cnt;i<len;i++){
-            arr[i]=1;
-        }
+
         for(int i=0;i<len;i++){
             System.out.print(arr[i]+" ");
         }
